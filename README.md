@@ -5,7 +5,7 @@ Bot do składania skarg w formie dialogu z graczem. Zawiera integrację z API St
 ## Instalacja
 #### Wymagania
 - Python 3.7.8+
-- Discord.py
+- Discord.py 1.7.2+
 - JSON Requests
 
 #### Tokeny
