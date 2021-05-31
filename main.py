@@ -48,7 +48,7 @@ async def on_ready():
 @bot.event
 async def on_message(message):
     if message.author.id != bot.user.id:
-        if message.content.startswith("!zabij"):
+        if message.content.startswith("!shutdown"):
 		        await message.channel.send("Okej")
 		        exit()
         if message.content.startswith("!ping"):
@@ -56,7 +56,7 @@ async def on_message(message):
                 msg = await message.channel.send("🏓 Pong !")
                 ping = (time.monotonic() - before) * 1000
                 await msg.edit(content=f"🏓 Pong !  `{int(ping)} ms`")
-        if message.content.startswith("!yes"):
+        if message.content.startswith("!report"):
             channel = message.channel
             def is_author(message):
                 return message.author.id == msg.author.id
@@ -176,7 +176,7 @@ Czy skarga się zgadza? (Wpisz *Tak* lub *Nie*)
 async def on_member_join(member):
     channel = member.guild.system_channel
     if channel is not None:
-        await channel.send(f'Welcome {member.mention}.'.format(member))
+        await channel.send(f'Witaj {member.mention}.'.format(member))
 
 @bot.event
 async def on_reaction_add(reaction, user):
