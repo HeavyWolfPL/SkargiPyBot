@@ -11,6 +11,11 @@ Bot do składania skarg w formie dialogu z graczem. Zawiera integrację z API St
 #### **Tokeny**
 Skopiuj plik token-example.json, wklej tam poprawne tokeny, a następnie zmień jego nazwę na `token.json`
 
+#### **Komendy**
+- ping
+- report
+- shutdown (Owner only)
+
 #### To-Do
 - Wsparcie na linki z SteamID64
 - Opcja wysłania dowodu w postaci załącznika
